@@ -16,14 +16,14 @@
 			href="https://fonts.gstatic.com"
 			crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
 			rel="stylesheet" />
 		<title>Grass Studio</title>
 	</head>
 
 	<body>
 		<header>
-			<div class="title-and-navigation">
+			<div class="header__title-and-navigation">
 				<h1>Grass Studio</h1>
 
 				<nav>
@@ -35,9 +35,9 @@
 					</ul>
 				</nav>
 			</div>
-			<div class="header-secondary-title-with-teaser-and-button">
+			<div class="header__secondary-title-with-teaser-and-button">
 				<h2>Outdoor Photography is a Journey</h2>
-				<div class="header-teaser-and-button">
+				<div class="header__teaser-and-button">
 					<div>
 						<span>We spent three months exploring Iceland</span>
 					</div>
@@ -50,7 +50,7 @@
 		<main>
 			<section class="section-articles">
 				<article>
-					<h3>Section title</h3>
+					<h3 class="article__heading">Section title</h3>
 					<div class="first-article">
 						<div>
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -66,31 +66,29 @@
 						</div>
 					</div>
 				</article>
-				<article>
-					<h3>Another title</h3>
+				<article class="article--with-photo">
+					<h3 class="article__heading">Another title</h3>
 					<div class="second-article">
 						<img
 							src="landscape-tree-horizon-mountain-cloud-plant-1410556-pxhere.com.png"
 							alt="road to the white church across lavender fields"
-							class="second-article-photo" />
-						<div class="second-article-first-part">
+							class="second-article__photo" />
+						<div class="second-article__first-part">
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 							Blanditiis sequi nostrum sit cumque enim consequatur error
 							repellat, doloribus sed, mollitia consectetur quidem fugiat
 							provident libero? Iure sapiente doloribus quam omnis.Lorem, ipsum
 							dolor sit amet consectetur adipisicing elit. Blanditiis sequi
 							nostrum sit cumque enim consequatur error repellat, doloribus sed,
-							mollitia consectetur quidem fugiat provident libero? Iure sapiente
-							doloribus quam omnis. Lorem, ipsum dolor sit amet consectetur
-							adipisicing elit. Blanditiis sequi nostrum sit cumque enim
-							consequatur error repellat, doloribus sed, mollitia consectetur
-							quidem fugiat provident libero? Iure sapiente doloribus quam
-							omnis.Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-							Blanditiis sequi nostrum sit cumque enim consequatur error
-							repellat, doloribus sed, mollitia consectetur quidem fugiat
-							provident libero? Iure sapiente doloribus quam omnis.
+							mollitia consectetur quidem fugiat provident libero?
+							<br /><br />
+							Iure sapiente doloribus quam omnis. Lorem, ipsum dolor sit amet
+							consectetur adipisicing elit. Blanditiis sequi nostrum sit cumque
+							enim consequatur error repellat, doloribus sed, mollitia
+							consectetur quidem fugiat provident libero? Iure sapiente
+							doloribus quam omnis.
 						</div>
-						<div class="second-article-second-part">
+						<div class="second-article__second-part">
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 							Blanditiis sequi nostrum sit cumque enim consequatur error
 							repellat, doloribus sed, mollitia consectetur quidem fugiat
@@ -99,16 +97,19 @@
 							nostrum sit cumque enim consequatur error repellat, doloribus sed,
 							mollitia consectetur quidem fugiat provident libero? Iure sapiente
 							doloribus quam omnis. Lorem, ipsum dolor sit amet consectetur
-							adipisicing elit. Blanditiis sequi nostrum sit cumque enim
-							consequatur error repellat, doloribus sed, mollitia consectetur
-							quidem fugiat provident libero? Iure sapiente doloribus quam
-							omnis.Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+							adipisicing elit.
+
+							<br /><br />
 							Blanditiis sequi nostrum sit cumque enim consequatur error
 							repellat, doloribus sed, mollitia consectetur quidem fugiat
-							provident libero? Iure sapiente doloribus quam omnis.
-							<button class="btn body-btn">read more</button>
+							provident libero? Iure sapiente doloribus quam omnis.Lorem, ipsum
+							dolor sit amet consectetur adipisicing elit. Blanditiis sequi
+							nostrum sit cumque enim consequatur error repellat, doloribus sed,
+							mollitia consectetur quidem fugiat provident libero? Iure sapiente
+							doloribus quam omnis.
 						</div>
 					</div>
+					<button class="btn btn--body">read more</button>
 				</article>
 			</section>
 			<section class="section-gallery">
