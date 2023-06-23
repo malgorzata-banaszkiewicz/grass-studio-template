@@ -18,6 +18,7 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
 			rel="stylesheet" />
+			<script defer src="script.js"></script>
 		<title>Grass Studio</title>
 	</head>
 
@@ -25,14 +26,32 @@
 		<header>
 			<div class="header__title-and-navigation">
 				<h1>Grass Studio</h1>
-
 				<nav>
-					<ul>
-						<li>about</li>
-						<li>trips</li>
-						<li>gallery</li>
-						<li>blog</li>
-					</ul>
+					<div class="dropdown--about">
+						<span>about</span>
+						<div class="dropdown--about--list">
+							<ul>
+								<li>team</li>
+								<li>idea</li>
+								<li>mission</li>
+								<li>support</li>
+							</ul>
+						</div>
+					</div>
+						<span id="trips">trips</span>
+						<div class="dropdown--gallery">
+							<span>gallery</span>
+							<div class="dropdown--gallery--list">
+								<ul>
+									<li>iceland</li>
+									<li>norway</li>
+									<li>arctica</li>
+									<li>alaska</li>
+								</ul>
+							</div>
+						</div>
+						<span>blog</span>
+					</div>
 				</nav>
 			</div>
 			<div class="header__secondary-title-with-teaser-and-button">
@@ -42,7 +61,13 @@
 						<span>We spent three months exploring Iceland</span>
 					</div>
 					<div>
-						<button class="btn">check it</button>
+						<button class="btn">
+							<a
+								class="btn--link"
+								href="#another-article"
+								>check it</a
+							>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -67,7 +92,11 @@
 					</div>
 				</article>
 				<article class="article--with-photo">
-					<h3 class="article__heading">Another title</h3>
+					<h3
+						class="article__heading"
+						id="another-article">
+						Another title
+					</h3>
 					<div class="second-article">
 						<img
 							src="landscape-tree-horizon-mountain-cloud-plant-1410556-pxhere.com.png"
@@ -109,46 +138,88 @@
 							doloribus quam omnis.
 						</div>
 					</div>
-					<button class="btn btn--body">read more</button>
+					<button class="btn btn--body">
+						<a
+							class="btn--link"
+							href="#trips"
+							>read more</a
+						>
+					</button>
 				</article>
 			</section>
-			<section class="section-gallery">
+			<section class="section-gallery" id="section-gallery">
+				<figure class="gallery-figure" id="figure--bridge">
+					<button class="invisible btn--gallery" id="btn--bridge">X</button>
 				<img
-					class="home-page-photo"
+					class="gallery-photo"
+					id="bridge"
 					src="beach-sea-coast-water-ocean-horizon-15529-pxhere.com.jpg"
 					alt="bridge on a black lava path over aquamarine water" />
+				</figure>
+				<figure class="gallery-figure" id="figure--grass-cottage">
+					<button class="invisible btn--gallery" id="btn--grass-cottage">X</button>
 				<img
-					class="home-page-photo"
+					class="gallery-photo"
+					id="grass-cottage"
 					src="grass-field-farm-lawn-meadow-hill-736197-pxhere.com.jpg"
 					alt="red cottage in the mountains with grass-covered roof" />
+					</figure>
+					<figure class="gallery-figure" id="figure--partial-horses">
+						<button class="invisible btn--gallery" id="btn--partial-horses">X</button>
 				<img
-					class="home-page-photo"
+					class="gallery-photo"
+					id="partial-horses"
 					src="hand-outdoor-sand-morning-animal-horse-114552-pxhere.com.jpg"
 					alt="horses" />
+					</figure>
+					<figure class="gallery-figure" id="figure--suv">
+						<button class="invisible btn--gallery" id="btn--suv">X</button>
 				<img
-					class="home-page-photo"
+					class="gallery-photo"
+					id="suv"
 					src="landscape-sea-coast-horizon-mountain-snow-1325243-pxhere.com.jpg"
 					alt="silver SUV on a road by the lake and mountains" />
+					</figure>
+					<figure class="gallery-figure"  id="figure--horses">
+						<button class="invisible btn--gallery" id="btn--horses">X</button>
 				<img
-					class="home-page-photo"
+					class="gallery-photo"
+					id="horses"
 					src="fotolia_170367715.png"
 					alt="black and brown horses on a grass field" />
+					</figure>
+					<figure class="gallery-figure" id="figure--city">
+						<button class="invisible btn--gallery" id="btn--city">X</button>
 				<img
-					class="home-page-photo"
+					class="gallery-photo"
+					id="city"
 					src="snow-winter-city-vehicle-church-iceland-836962-pxhere.com.jpg"
 					alt="Bird's-eye view of snow coreved city" />
+					</figure>
+					<figure class="gallery-figure"  id="figure--hill">
+						<button class="invisible btn--gallery" id="btn--hill">X</button>
 				<img
-					class="home-page-photo"
+					class="gallery-photo"
+					id="hill"
 					src="landscape-sea-nature-ocean-mountain-sky-386319-pxhere.com.jpg"
 					alt="triangle yellow hill by the sea" />
+					</figure>
+					<figure class="gallery-figure"  id="figure--bird">
+						<button class="invisible btn--gallery" id="btn--bird">X</button>
 				<img
-					class="home-page-photo"
+					class="gallery-photo"
+					id="bird"
 					src="sea-coast-water-ocean-bird-animal-136776-pxhere.com.jpg"
 					alt="bird with an orange beak sitting on the sea coast" />
+					</figure>
+					<figure class="gallery-figure" id="figure--mountain">
+						<button class="invisible btn--gallery" id="btn--mountain">X</button>
 				<img
-					class="home-page-photo"
+					class="gallery-photo"
+					id="mountain"
 					src="landscape-nature-grass-horizon-wilderness-mountain-946977-pxhere.com.jpg"
 					alt="view of the snow covered mountains behind a grass field" />
+					</figure>
 			</section>
 		</main>
 		<footer>All rights reserved Grass studio</footer>
