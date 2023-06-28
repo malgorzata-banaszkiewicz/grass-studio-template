@@ -29,16 +29,16 @@ let mountainFigure = document.querySelector("#figure--mountain");
 
 const lightboxON = (el, btn, figure) => {
 	gallerySection.classList.remove("section-gallery");
-	gallerySection.classList.add("section-gallery--chosen");
-	figure.classList.add("gallery-figure--chosen");
-	el.classList.add("gallery-photo--chosen");
+	gallerySection.classList.add("section__gallery--chosen");
+	figure.classList.add("gallery__figure--chosen");
+	el.classList.add("gallery__photo--chosen");
 	btn.classList.remove("invisible");
 };
 const lightboxOFF = (el, btn, figure) => {
-	gallerySection.classList.remove("section-gallery--chosen");
+	gallerySection.classList.remove("section__gallery--chosen");
 	gallerySection.classList.add("section-gallery");
-	figure.classList.remove("gallery-figure--chosen");
-	el.classList.remove("gallery-photo--chosen");
+	figure.classList.remove("gallery__figure--chosen");
+	el.classList.remove("gallery__photo--chosen");
 	btn.classList.add("invisible");
 };
 
