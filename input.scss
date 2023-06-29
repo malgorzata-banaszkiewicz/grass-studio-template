@@ -1,4 +1,6 @@
 $font-stack: "Open Sans", sans-serif;
+$layout-breakpoint-small: 920px;
+$layout-breakpoint-medium: 1340px;
 
 .nav {
 	display: flex;
@@ -111,9 +113,8 @@ $font-stack: "Open Sans", sans-serif;
 }
 
 @mixin article {
-	padding-top: 36px;
 	display: flex;
-	padding: 36px 110px 0 110px;
+	padding: 36px 110px 36px 110px;
 }
 
 .article__heading {
@@ -130,6 +131,10 @@ $font-stack: "Open Sans", sans-serif;
 	.article--first {
 		gap: 20px;
 		display: flex;
+
+		@media (max-width: $layout-breakpoint-small) {
+			flex-direction: column;
+		}
 	}
 }
 .article--with-photo {
@@ -144,23 +149,12 @@ $font-stack: "Open Sans", sans-serif;
 	.article--second {
 		flex-wrap: wrap;
 		flex-direction: row;
+		overflow: auto;
+		margin-top: 40px;
 		&__photo {
 			width: 350px;
-			height: 250px;
-			margin-right: 36px;
-			margin-bottom: 36px;
-		}
-
-		&__first-part {
-			width: 50%;
-		}
-
-		&__second-part {
-			width: 100%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+			margin: 0 36px 36px 0;
+			float: left;
 		}
 	}
 }
@@ -197,7 +191,7 @@ $font-stack: "Open Sans", sans-serif;
 	color: grey;
 	border: 3px solid grey;
 	width: 200px;
-	margin: 36px 0 68px 0;
+	margin: 36px 0 25px 0;
 }
 
 .btn--gallery {
@@ -232,6 +226,10 @@ $font-stack: "Open Sans", sans-serif;
 	&--chosen {
 		display: flex;
 		flex-direction: column;
+	}
+
+	@media (max-width: $layout-breakpoint-medium) {
+		justify-content: center;
 	}
 }
 
