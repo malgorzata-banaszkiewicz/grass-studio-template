@@ -1,0 +1,41 @@
+Hi there,
+
+things you'll find in this file pack:
+
+- website design in PSD format,
+- assets,
+- flattened design previews in JPG format,
+- following brief.
+
+1. The primary objective is to code (HTML & CSS) a working website and complete the JavaScript task according to the specification below. The finished project (opened in a web browser - the latest Chrome) should look the same as the provided JPG preview.
+
+2. As soon as you familiarize yourself with this brief please send us an estimate of when you can finish the task to work@chop-chop.org.
+
+3. Final project files should be sent to work@chop-chop.org in a ZIP file pack named `sample-pack-imie-nazwisko.zip`. In your email please include a total amount of time spent on this task, and please be honest :) This will have little to no effect on the evaluation, the quality is much more important to us, but still, we are always curious about the amount of time spent on this.
+
+
+Coding guide:
+- Please use 'Open Sans' font for all the text. You can use google fonts (https://fonts.google.com/specimen/Open+Sans).
+- When coding the site, try to be as close to the design as possible. The finished project should be almost pixel-perfect. Use Chrome extension PerfectPixel (https://www.welldonecode.com/perfectpixel/) to gain that effect. In case identical modules are not pixel-perfect identical (when it comes to a few pixels in the margin, padding, size, or letter-spacing, etc.), modular and clean code is more important to us than pixel-perfect precision.
+- There are no hover effects on the elements in the PSD. Add hover effects on your own, according to your best judgment.
+- Do not use any framework or grid such as Bootstrap.
+- Some elements in the design fill 100% of the viewport width, and should always be 100% of the browser's window width.
+- We give additional points for coding responsive views of the page, so make sure the project looks good on tablets and mobile. 
+- You can of course use the internet for help, but please do not paste any found code snippets and do not use any plugins.
+- Code the projects in SCSS as for the styles, and ES6+ as for the scripts. Use jQuery if you have to, but we give additional points for using vanilla JavaScript. Provide the source code (SCSS & JS) in the file pack you will send us.
+- If you don't have access to Photoshop, you can open the PSD file with a freeware https://www.photopea.com/
+
+
+= JavaScript and CSS Task =
+
+Instructions:
+- Buttons "read more" and "check it" are regular links, use "#" in the href attribute.
+- The navigation menu has got two dropdowns. A dropdown should appear when a user hovers over its respective parent, which is an item in the main navigation. They are hidden by default in the PSD, but you can find them there.
+- Gallery has got a Lightbox (also hidden by default in the PSD), that should open up when any image (expect the hero background image) is clicked. The lightbox should cover the whole screen (100% screen width and height), the image should be centered. 
+- We expect you to prepare modular, reusable ES6+ scripts for lightbox and menu dropdowns.  
+- We would like you to use a modular approach to CSS too. Use BEM (http://getbem.com/introduction/) for that purpose.
+
+
+
+Good luck!
+Team at Chop-Chop.org

@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+audio,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font: 100% "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+}
+@media (min-width: 480px) {
+  h1 {
+    font-size: 51px;
+  }
+}
+
+h2 {
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+}
+
+main p {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=general.css.map */
